@@ -3,6 +3,7 @@ Straight method againts flow:
 $$
 \frac{u_n^{i+1} - u_n^i}{\Delta t} + u \frac{u_n^i - u_{n-1}^i}{\Delta x} = \nu \frac{u_{i+1}^n - 2u_i^n + u_{i-1}^n}{\Delta x^2}
 $$
+
 ![Явная схема против потока](https://github.com/user-attachments/assets/25fb6e19-e5bc-45fd-87b4-defc7a17904d)
 
 Lax method:
