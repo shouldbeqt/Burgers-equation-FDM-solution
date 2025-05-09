@@ -7,8 +7,8 @@ from PIL import Image
 
 
 viscosity = [1, 0.1, 0.01, 0.001]
-dx =  10
-dt =  100
+dx =  100
+dt =  100000
 X = 1
 T = 1
 x = np.linspace (0, X, dx)
@@ -21,18 +21,17 @@ class Main_attribute ():
     Class initializate for main attribute which will be using in all mesh
     """
     def __init__ (self):
-        self.dx =  10
-        self.dt =  1000
+        self.dx =  dx
+        self.dt =  dt
 
-        self.X = 1
-        self.T = 1
+        self.X = X
+        self.T = T
 
-        self.x = np.linspace (0, self.X, self.dx)
-        self.t = np.linspace (0, self.T, self.dt)
+        self.x = x
+        self.t = t
 
-        self.delta_x = self.X/(self.dx-1)
-        self.delta_t = self.T/(self.dt-1)
-
+        self.delta_x = delta_x
+        self.delta_t = delta_t
 
     def condition (self, matrix):
         """
