@@ -1,6 +1,6 @@
 ﻿# Burgers-equation-FDM-solution
 Straight method againts flow:
-\frac{u_n^{i+1}-u_n^i}{dt}+u\frac{u_n^i-u_{n-1}^i}{dx}=\nu(\frac{u_{i+1}-2u_i-u_{i-1}}{dx^2})
+\frac{u_n^{i+1} - u_n^i}{\Delta t} + u \frac{u_n^i - u_{n-1}^i}{\Delta x} = \nu \frac{u_{i+1}^n - 2u_i^n + u_{i-1}^n}{\Delta x^2}
 ![Явная схема против потока](https://github.com/user-attachments/assets/25fb6e19-e5bc-45fd-87b4-defc7a17904d)
 Lax method:
 \frac{u_n^{i+1}-0.5\ (u_{n+1}^i-u_{n-1}^i)}{dt}+u\frac{u_{n+1}^i-u_{n-1}^i}{2dx}=\nu(\frac{u_{i+1}-2u_i-u_{i-1}}{dx^2})
